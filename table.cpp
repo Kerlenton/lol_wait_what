@@ -31,7 +31,7 @@ int main(void)
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
 	
-	freopen("26-4.txt", "r", stdin); // 11493372 4877
+	freopen("f.txt", "r", stdin); // 11493372 4877
 	
 	int n; cin >> n;
 	double sum = 0;
