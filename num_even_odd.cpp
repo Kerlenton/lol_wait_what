@@ -31,7 +31,7 @@ int main(void)
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
 	
-	freopen("26-4.txt", "r", stdin);
+	freopen("26-4.txt", "r", stdin); // 15 954387771
 	
 	ll even = 0;
 	ll odd = 0;
@@ -84,40 +84,3 @@ int main(void)
 	
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 15 954387771
