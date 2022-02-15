@@ -31,7 +31,7 @@ int main(void)
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
 	
-	freopen("26-4.txt", "r", stdin);
+	//freopen("26-4.txt", "r", stdin);
 	
 	ll even = 0;
 	ll odd = 0;
@@ -50,25 +50,25 @@ int main(void)
 		
 		if (val % 2 == 0)
 		{
-			ev.push_back(val);
+			ev.emplace_back(val);
 			s.insert(val);
 			++even;
 		}
 		
 		else
 		{
-			od.push_back(val);
+			od.emplace_back(val);
 			s.insert(val);
 			++odd;
 		}
 	}
 	
-	int k = 0;
-	int mx = 0;
+	ll k = 0;
+	ll mx = 0;
 	
-	for (int i = 0; i < even; i++)
+	for (ll i = 0; i < even; i++)
 	{
-		for (int j = 0; j < odd; j++)
+		for (ll j = 0; j < odd; j++)
 		{
 			if (s.count(ev[i] + od[j]))
 			{
