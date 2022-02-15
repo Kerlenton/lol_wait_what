@@ -26,18 +26,6 @@ const ll INF = 1000000000;
 const ll N = (int)2e5;
 const ll K = 448;
 
-ll a[N];
-ll push[K];
-ll sum[K];
-
-void recalc(ll b, ll n)
-{
-	sum[b] = 0;
-	
-	for (ll i = b * K; i < min(n, (b + 1) * K); i++)
-		sum[b] += a[i];
-}
-
 int main(void)
 {
 	ios_base::sync_with_stdio(false);
